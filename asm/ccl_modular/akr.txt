@@ -1,0 +1,1570 @@
+// class version 50.0 (50)
+// access flags 0x21
+public class akr extends alw  {
+
+  // compiled from: BlockDynamicLiquid.java
+
+  // access flags 0x0
+  I a
+
+  // access flags 0x0
+  [Z b
+
+  // access flags 0x0
+  [I M
+
+  // access flags 0x1A
+  private final static Ljava/lang/String; __OBFID = "CL_00000234"
+
+  // access flags 0x4
+  protected <init>(Lawt;)V
+   L0
+    LINENUMBER 22 L0
+    ALOAD 0
+    ALOAD 1
+    INVOKESPECIAL alw.<init> (Lawt;)V
+   L1
+    LINENUMBER 16 L1
+    ALOAD 0
+    ICONST_4
+    NEWARRAY T_BOOLEAN
+    PUTFIELD akr.b : [Z
+   L2
+    LINENUMBER 17 L2
+    ALOAD 0
+    ICONST_4
+    NEWARRAY T_INT
+    PUTFIELD akr.M : [I
+   L3
+    LINENUMBER 23 L3
+    RETURN
+   L4
+    LOCALVARIABLE this Lakr; L0 L4 0
+    LOCALVARIABLE p_i45403_1_ Lawt; L0 L4 1
+    MAXSTACK = 2
+    MAXLOCALS = 2
+
+  // access flags 0x2
+  private n(Lahb;III)V
+   L0
+    LINENUMBER 27 L0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL ahb.e (III)I
+    ISTORE 5
+   L1
+    LINENUMBER 28 L1
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    INVOKESTATIC aji.b (Laji;)I
+    ICONST_1
+    IADD
+    INVOKESTATIC aji.e (I)Laji;
+    ILOAD 5
+    ICONST_2
+    INVOKEVIRTUAL ahb.d (IIILaji;II)Z
+    POP
+   L2
+    LINENUMBER 29 L2
+    RETURN
+   L3
+    LOCALVARIABLE this Lakr; L0 L3 0
+    LOCALVARIABLE p_149811_1_ Lahb; L0 L3 1
+    LOCALVARIABLE p_149811_2_ I L0 L3 2
+    LOCALVARIABLE p_149811_3_ I L0 L3 3
+    LOCALVARIABLE p_149811_4_ I L0 L3 4
+    LOCALVARIABLE l I L1 L3 5
+    MAXSTACK = 7
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public a(Lahb;IIILjava/util/Random;)V
+   L0
+    LINENUMBER 33 L0
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL akr.e (Lahb;III)I
+    ISTORE 6
+   L1
+    LINENUMBER 34 L1
+    ICONST_1
+    ISTORE 7
+   L2
+    LINENUMBER 36 L2
+    ALOAD 0
+    GETFIELD akr.J : Lawt;
+    GETSTATIC awt.i : Lawt;
+    IF_ACMPNE L3
+    ALOAD 1
+    GETFIELD ahb.t : Laqo;
+    GETFIELD aqo.f : Z
+    IFNE L3
+   L4
+    LINENUMBER 38 L4
+    ICONST_2
+    ISTORE 7
+   L3
+    LINENUMBER 41 L3
+   FRAME FULL [akr ahb I I I java/util/Random I I] []
+    ICONST_1
+    ISTORE 8
+   L5
+    LINENUMBER 42 L5
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL akr.a (Lahb;)I
+    ISTORE 9
+   L6
+    LINENUMBER 47 L6
+    ALOAD 1
+    INVOKEVIRTUAL ahb.getWorld ()Lorg/bukkit/craftbukkit/v1_7_R4/CraftWorld;
+    ASTORE 11
+   L7
+    LINENUMBER 48 L7
+    ALOAD 1
+    INVOKEVIRTUAL ahb.getServer ()Lorg/bukkit/craftbukkit/v1_7_R4/CraftServer;
+    ASTORE 12
+   L8
+    LINENUMBER 49 L8
+    ALOAD 11
+    IFNONNULL L9
+    ACONST_NULL
+    GOTO L10
+   L9
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer] []
+    ALOAD 11
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEINTERFACE org/bukkit/World.getBlockAt (III)Lorg/bukkit/block/Block;
+   L10
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer] [org/bukkit/block/Block]
+    ASTORE 13
+   L11
+    LINENUMBER 51 L11
+    ILOAD 6
+    IFLE L12
+   L13
+    LINENUMBER 53 L13
+    BIPUSH -100
+    ISTORE 14
+   L14
+    LINENUMBER 54 L14
+    ALOAD 0
+    ICONST_0
+    PUTFIELD akr.a : I
+   L15
+    LINENUMBER 55 L15
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ICONST_1
+    ISUB
+    ILOAD 3
+    ILOAD 4
+    ILOAD 14
+    INVOKEVIRTUAL akr.a (Lahb;IIII)I
+    ISTORE 15
+   L16
+    LINENUMBER 56 L16
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ICONST_1
+    IADD
+    ILOAD 3
+    ILOAD 4
+    ILOAD 15
+    INVOKEVIRTUAL akr.a (Lahb;IIII)I
+    ISTORE 15
+   L17
+    LINENUMBER 57 L17
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ICONST_1
+    ISUB
+    ILOAD 15
+    INVOKEVIRTUAL akr.a (Lahb;IIII)I
+    ISTORE 15
+   L18
+    LINENUMBER 58 L18
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ICONST_1
+    IADD
+    ILOAD 15
+    INVOKEVIRTUAL akr.a (Lahb;IIII)I
+    ISTORE 15
+   L19
+    LINENUMBER 59 L19
+    ILOAD 15
+    ILOAD 7
+    IADD
+    ISTORE 10
+   L20
+    LINENUMBER 61 L20
+    ILOAD 10
+    BIPUSH 8
+    IF_ICMPGE L21
+    ILOAD 15
+    IFGE L22
+   L21
+    LINENUMBER 63 L21
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    ICONST_M1
+    ISTORE 10
+   L22
+    LINENUMBER 66 L22
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    IADD
+    ILOAD 4
+    INVOKEVIRTUAL akr.e (Lahb;III)I
+    IFLT L23
+   L24
+    LINENUMBER 68 L24
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    IADD
+    ILOAD 4
+    INVOKEVIRTUAL akr.e (Lahb;III)I
+    ISTORE 16
+   L25
+    LINENUMBER 70 L25
+    ILOAD 16
+    BIPUSH 8
+    IF_ICMPLT L26
+   L27
+    LINENUMBER 72 L27
+    ILOAD 16
+    ISTORE 10
+    GOTO L23
+   L26
+    LINENUMBER 76 L26
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I I] []
+    ILOAD 16
+    BIPUSH 8
+    IADD
+    ISTORE 10
+   L23
+    LINENUMBER 81 L23
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    INVOKESTATIC net/minecraft/server/MinecraftServer.I ()Lnet/minecraft/server/MinecraftServer;
+    POP
+    GETSTATIC net/minecraft/server/MinecraftServer.cauldronConfig : Lnet/minecraftforge/cauldron/configuration/CauldronConfig;
+    GETFIELD net/minecraftforge/cauldron/configuration/CauldronConfig.infiniteWaterSource : Lnet/minecraftforge/cauldron/configuration/BoolSetting;
+    INVOKEVIRTUAL net/minecraftforge/cauldron/configuration/BoolSetting.getValue ()Ljava/lang/Boolean;
+    INVOKEVIRTUAL java/lang/Boolean.booleanValue ()Z
+    IFEQ L28
+    GOTO L28
+   L29
+    LINENUMBER 83 L29
+   FRAME FULL [] [java/lang/Throwable]
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    ATHROW
+   L30
+   FRAME FULL [] [java/lang/Throwable]
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    ATHROW
+   L31
+    LINENUMBER 85 L31
+   FRAME FULL [] [java/lang/Throwable]
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    ATHROW
+   L32
+    LINENUMBER 87 L32
+   FRAME FULL [] [java/lang/Throwable]
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    ATHROW
+   L33
+    LINENUMBER 89 L33
+   FRAME FULL [] [java/lang/Throwable]
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    ATHROW
+   L34
+   FRAME FULL [] [java/lang/Throwable]
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    NOP
+    ATHROW
+   L35
+    LINENUMBER 91 L35
+   FRAME FULL [] [java/lang/Throwable]
+    NOP
+    NOP
+    ATHROW
+   L28
+    LINENUMBER 97 L28
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    ALOAD 0
+    GETFIELD akr.J : Lawt;
+    GETSTATIC awt.i : Lawt;
+    IF_ACMPNE L36
+    ILOAD 6
+    BIPUSH 8
+    IF_ICMPGE L36
+    ILOAD 10
+    BIPUSH 8
+    IF_ICMPGE L36
+    ILOAD 10
+    ILOAD 6
+    IF_ICMPLE L36
+    ALOAD 5
+    ICONST_4
+    INVOKEVIRTUAL java/util/Random.nextInt (I)I
+    IFEQ L36
+   L37
+    LINENUMBER 99 L37
+    ILOAD 9
+    ICONST_4
+    IMUL
+    ISTORE 9
+   L36
+    LINENUMBER 102 L36
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    ILOAD 10
+    ILOAD 6
+    IF_ICMPNE L38
+   L39
+    LINENUMBER 104 L39
+    ILOAD 8
+    IFEQ L40
+   L41
+    LINENUMBER 106 L41
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKESPECIAL akr.n (Lahb;III)V
+    GOTO L42
+   L40
+    LINENUMBER 109 L40
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    INVOKESTATIC net/minecraft/server/MinecraftServer.I ()Lnet/minecraft/server/MinecraftServer;
+    POP
+    GETSTATIC net/minecraft/server/MinecraftServer.cauldronConfig : Lnet/minecraftforge/cauldron/configuration/CauldronConfig;
+    GETFIELD net/minecraftforge/cauldron/configuration/CauldronConfig.flowingLavaDecay : Lnet/minecraftforge/cauldron/configuration/BoolSetting;
+    INVOKEVIRTUAL net/minecraftforge/cauldron/configuration/BoolSetting.getValue ()Ljava/lang/Boolean;
+    INVOKEVIRTUAL java/lang/Boolean.booleanValue ()Z
+    IFEQ L42
+   L43
+    LINENUMBER 112 L43
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL akr.a (Lahb;)I
+    INVOKEVIRTUAL ahb.a (IIILaji;I)V
+    GOTO L42
+   L38
+    LINENUMBER 118 L38
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    ILOAD 10
+    ISTORE 6
+   L44
+    LINENUMBER 120 L44
+    ILOAD 10
+    IFGE L45
+   L46
+    LINENUMBER 122 L46
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL ahb.f (III)Z
+    POP
+    GOTO L42
+   L45
+    LINENUMBER 126 L45
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ILOAD 10
+    ICONST_2
+    INVOKEVIRTUAL ahb.a (IIIII)Z
+    POP
+   L47
+    LINENUMBER 127 L47
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    ILOAD 9
+    INVOKEVIRTUAL ahb.a (IIILaji;I)V
+   L48
+    LINENUMBER 130 L48
+    ALOAD 1
+    ILOAD 2
+    ICONST_1
+    ISUB
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    INVOKEVIRTUAL ahb.e (IIILaji;)V
+   L49
+    LINENUMBER 131 L49
+    ALOAD 1
+    ILOAD 2
+    ICONST_1
+    IADD
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    INVOKEVIRTUAL ahb.e (IIILaji;)V
+   L50
+    LINENUMBER 136 L50
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    IADD
+    ILOAD 4
+    ALOAD 0
+    INVOKEVIRTUAL ahb.e (IIILaji;)V
+   L51
+    LINENUMBER 137 L51
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ICONST_1
+    ISUB
+    ALOAD 0
+    INVOKEVIRTUAL ahb.e (IIILaji;)V
+   L52
+    LINENUMBER 138 L52
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ICONST_1
+    IADD
+    ALOAD 0
+    INVOKEVIRTUAL ahb.e (IIILaji;)V
+   L42
+    LINENUMBER 142 L42
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block I I] []
+    GOTO L53
+   L12
+    LINENUMBER 145 L12
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKESPECIAL akr.n (Lahb;III)V
+   L53
+    LINENUMBER 148 L53
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 4
+    INVOKESPECIAL akr.q (Lahb;III)Z
+    IFEQ L54
+   L55
+    LINENUMBER 150 L55
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL ahb.getType (III)Laji;
+    INVOKEVIRTUAL aji.o ()Lawt;
+    ALOAD 0
+    GETFIELD akr.J : Lawt;
+    IF_ACMPEQ L56
+    RETURN
+   L56
+    LINENUMBER 153 L56
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block] []
+    NEW org/bukkit/event/block/BlockFromToEvent
+    DUP
+    ALOAD 13
+    GETSTATIC org/bukkit/block/BlockFace.DOWN : Lorg/bukkit/block/BlockFace;
+    INVOKESPECIAL org/bukkit/event/block/BlockFromToEvent.<init> (Lorg/bukkit/block/Block;Lorg/bukkit/block/BlockFace;)V
+    ASTORE 14
+   L57
+    LINENUMBER 155 L57
+    ALOAD 12
+    IFNULL L58
+    ALOAD 13
+    IFNULL L58
+   L59
+    LINENUMBER 157 L59
+    ALOAD 12
+    INVOKEINTERFACE org/bukkit/Server.getPluginManager ()Lorg/bukkit/plugin/PluginManager;
+    ALOAD 14
+    INVOKEINTERFACE org/bukkit/plugin/PluginManager.callEvent (Lorg/bukkit/event/Event;)V
+   L58
+    LINENUMBER 160 L58
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block org/bukkit/event/block/BlockFromToEvent] []
+    ALOAD 14
+    INVOKEVIRTUAL org/bukkit/event/block/BlockFromToEvent.isCancelled ()Z
+    IFNE L60
+   L61
+    LINENUMBER 162 L61
+    ALOAD 0
+    GETFIELD akr.J : Lawt;
+    GETSTATIC awt.i : Lawt;
+    IF_ACMPNE L62
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 4
+    INVOKEVIRTUAL ahb.a (III)Laji;
+    INVOKEVIRTUAL aji.o ()Lawt;
+    GETSTATIC awt.h : Lawt;
+    IF_ACMPNE L62
+   L63
+    LINENUMBER 164 L63
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 4
+    GETSTATIC ajn.b : Laji;
+    INVOKEVIRTUAL ahb.b (IIILaji;)Z
+    POP
+   L64
+    LINENUMBER 165 L64
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 4
+    INVOKEVIRTUAL akr.m (Lahb;III)V
+   L65
+    LINENUMBER 166 L65
+    RETURN
+   L62
+    LINENUMBER 169 L62
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block org/bukkit/event/block/BlockFromToEvent] []
+    ILOAD 6
+    BIPUSH 8
+    IF_ICMPLT L66
+   L67
+    LINENUMBER 171 L67
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 4
+    ILOAD 6
+    INVOKESPECIAL akr.h (Lahb;IIII)V
+    GOTO L60
+   L66
+    LINENUMBER 175 L66
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block org/bukkit/event/block/BlockFromToEvent] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 4
+    ILOAD 6
+    BIPUSH 8
+    IADD
+    INVOKESPECIAL akr.h (Lahb;IIII)V
+   L60
+    LINENUMBER 180 L60
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block org/bukkit/event/block/BlockFromToEvent] []
+    GOTO L68
+   L54
+    LINENUMBER 181 L54
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block] []
+    ILOAD 6
+    IFLT L68
+    ILOAD 6
+    IFEQ L69
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 4
+    INVOKESPECIAL akr.p (Lahb;III)Z
+    IFEQ L68
+   L69
+    LINENUMBER 183 L69
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKESPECIAL akr.o (Lahb;III)[Z
+    ASTORE 14
+   L70
+    LINENUMBER 184 L70
+    ILOAD 6
+    ILOAD 7
+    IADD
+    ISTORE 10
+   L71
+    LINENUMBER 186 L71
+    ILOAD 6
+    BIPUSH 8
+    IF_ICMPLT L72
+   L73
+    LINENUMBER 188 L73
+    ICONST_1
+    ISTORE 10
+   L72
+    LINENUMBER 191 L72
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block [Z] []
+    ILOAD 10
+    BIPUSH 8
+    IF_ICMPLT L74
+   L75
+    LINENUMBER 193 L75
+    RETURN
+   L74
+    LINENUMBER 197 L74
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block [Z] []
+    ICONST_4
+    ANEWARRAY org/bukkit/block/BlockFace
+    DUP
+    ICONST_0
+    GETSTATIC org/bukkit/block/BlockFace.WEST : Lorg/bukkit/block/BlockFace;
+    AASTORE
+    DUP
+    ICONST_1
+    GETSTATIC org/bukkit/block/BlockFace.EAST : Lorg/bukkit/block/BlockFace;
+    AASTORE
+    DUP
+    ICONST_2
+    GETSTATIC org/bukkit/block/BlockFace.NORTH : Lorg/bukkit/block/BlockFace;
+    AASTORE
+    DUP
+    ICONST_3
+    GETSTATIC org/bukkit/block/BlockFace.SOUTH : Lorg/bukkit/block/BlockFace;
+    AASTORE
+    ASTORE 15
+   L76
+    LINENUMBER 198 L76
+    ICONST_0
+    ISTORE 16
+   L77
+    LINENUMBER 200 L77
+    ALOAD 15
+    ASTORE 17
+    ALOAD 17
+    ARRAYLENGTH
+    ISTORE 18
+    ICONST_0
+    ISTORE 19
+   L78
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block [Z [Lorg/bukkit/block/BlockFace; I [Lorg/bukkit/block/BlockFace; I I] []
+    ILOAD 19
+    ILOAD 18
+    IF_ICMPGE L68
+    ALOAD 17
+    ILOAD 19
+    AALOAD
+    ASTORE 20
+   L79
+    LINENUMBER 202 L79
+    ALOAD 14
+    ILOAD 16
+    BALOAD
+    IFEQ L80
+   L81
+    LINENUMBER 204 L81
+    NEW org/bukkit/event/block/BlockFromToEvent
+    DUP
+    ALOAD 13
+    ALOAD 20
+    INVOKESPECIAL org/bukkit/event/block/BlockFromToEvent.<init> (Lorg/bukkit/block/Block;Lorg/bukkit/block/BlockFace;)V
+    ASTORE 21
+   L82
+    LINENUMBER 206 L82
+    ALOAD 12
+    IFNULL L83
+    ALOAD 13
+    IFNULL L83
+   L84
+    LINENUMBER 208 L84
+    ALOAD 12
+    INVOKEINTERFACE org/bukkit/Server.getPluginManager ()Lorg/bukkit/plugin/PluginManager;
+    ALOAD 21
+    INVOKEINTERFACE org/bukkit/plugin/PluginManager.callEvent (Lorg/bukkit/event/Event;)V
+   L83
+    LINENUMBER 211 L83
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block [Z [Lorg/bukkit/block/BlockFace; I [Lorg/bukkit/block/BlockFace; I I org/bukkit/block/BlockFace org/bukkit/event/block/BlockFromToEvent] []
+    ALOAD 21
+    INVOKEVIRTUAL org/bukkit/event/block/BlockFromToEvent.isCancelled ()Z
+    IFNE L80
+   L85
+    LINENUMBER 213 L85
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ALOAD 20
+    INVOKEVIRTUAL org/bukkit/block/BlockFace.getModX ()I
+    IADD
+    ILOAD 3
+    ILOAD 4
+    ALOAD 20
+    INVOKEVIRTUAL org/bukkit/block/BlockFace.getModZ ()I
+    IADD
+    ILOAD 10
+    INVOKESPECIAL akr.h (Lahb;IIII)V
+   L80
+    LINENUMBER 217 L80
+   FRAME FULL [akr ahb I I I java/util/Random I I I I I org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block [Z [Lorg/bukkit/block/BlockFace; I [Lorg/bukkit/block/BlockFace; I I org/bukkit/block/BlockFace] []
+    IINC 16 1
+   L86
+    LINENUMBER 200 L86
+    IINC 19 1
+    GOTO L78
+   L68
+    LINENUMBER 222 L68
+   FRAME FULL [akr ahb I I I java/util/Random I I I I T org/bukkit/craftbukkit/v1_7_R4/CraftWorld org/bukkit/craftbukkit/v1_7_R4/CraftServer org/bukkit/block/Block] []
+    RETURN
+   L87
+    LOCALVARIABLE k1 I L25 L23 16
+    LOCALVARIABLE b1 B L14 L42 14
+    LOCALVARIABLE l1 I L16 L42 15
+    LOCALVARIABLE j1 I L20 L12 10
+    LOCALVARIABLE event Lorg/bukkit/event/block/BlockFromToEvent; L57 L60 14
+    LOCALVARIABLE event Lorg/bukkit/event/block/BlockFromToEvent; L82 L80 21
+    LOCALVARIABLE currentFace Lorg/bukkit/block/BlockFace; L79 L86 20
+    LOCALVARIABLE aboolean [Z L70 L68 14
+    LOCALVARIABLE faces [Lorg/bukkit/block/BlockFace; L76 L68 15
+    LOCALVARIABLE index I L77 L68 16
+    LOCALVARIABLE j1 I L71 L68 10
+    LOCALVARIABLE this Lakr; L0 L87 0
+    LOCALVARIABLE p_149674_1_ Lahb; L0 L87 1
+    LOCALVARIABLE p_149674_2_ I L0 L87 2
+    LOCALVARIABLE p_149674_3_ I L0 L87 3
+    LOCALVARIABLE p_149674_4_ I L0 L87 4
+    LOCALVARIABLE p_149674_5_ Ljava/util/Random; L0 L87 5
+    LOCALVARIABLE l I L1 L87 6
+    LOCALVARIABLE b0 B L2 L87 7
+    LOCALVARIABLE flag Z L5 L87 8
+    LOCALVARIABLE i1 I L6 L87 9
+    LOCALVARIABLE bworld Lorg/bukkit/World; L7 L87 11
+    LOCALVARIABLE server Lorg/bukkit/Server; L8 L87 12
+    LOCALVARIABLE source Lorg/bukkit/block/Block; L11 L87 13
+    MAXSTACK = 7
+    MAXLOCALS = 22
+
+  // access flags 0x2
+  private h(Lahb;IIII)V
+   L0
+    LINENUMBER 226 L0
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKESPECIAL akr.q (Lahb;III)Z
+    IFEQ L1
+   L2
+    LINENUMBER 228 L2
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL ahb.a (III)Laji;
+    ASTORE 6
+   L3
+    LINENUMBER 230 L3
+    ALOAD 0
+    GETFIELD akr.J : Lawt;
+    GETSTATIC awt.i : Lawt;
+    IF_ACMPNE L4
+   L5
+    LINENUMBER 232 L5
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL akr.m (Lahb;III)V
+    GOTO L6
+   L4
+    LINENUMBER 236 L4
+   FRAME FULL [akr ahb I I I I aji] []
+    ALOAD 6
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL ahb.e (III)I
+    ICONST_0
+    INVOKEVIRTUAL aji.b (Lahb;IIIII)V
+   L6
+    LINENUMBER 239 L6
+   FRAME FULL [akr ahb I I I I aji] []
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    ILOAD 5
+    ICONST_3
+    INVOKEVIRTUAL ahb.d (IIILaji;II)Z
+    POP
+   L1
+    LINENUMBER 241 L1
+   FRAME FULL [akr ahb I I I I] []
+    RETURN
+   L7
+    LOCALVARIABLE block Laji; L3 L1 6
+    LOCALVARIABLE this Lakr; L0 L7 0
+    LOCALVARIABLE p_149813_1_ Lahb; L0 L7 1
+    LOCALVARIABLE p_149813_2_ I L0 L7 2
+    LOCALVARIABLE p_149813_3_ I L0 L7 3
+    LOCALVARIABLE p_149813_4_ I L0 L7 4
+    LOCALVARIABLE p_149813_5_ I L0 L7 5
+    MAXSTACK = 9
+    MAXLOCALS = 7
+
+  // access flags 0x2
+  private c(Lahb;IIIII)I
+   L0
+    LINENUMBER 245 L0
+    SIPUSH 1000
+    ISTORE 7
+   L1
+    LINENUMBER 247 L1
+    ICONST_0
+    ISTORE 8
+   L2
+   FRAME FULL [akr ahb I I I I I I I] []
+    ILOAD 8
+    ICONST_4
+    IF_ICMPGE L3
+   L4
+    LINENUMBER 249 L4
+    ILOAD 8
+    IFNE L5
+    ILOAD 6
+    ICONST_1
+    IF_ICMPEQ L6
+   L5
+   FRAME FULL [akr ahb I I I I I I I] []
+    ILOAD 8
+    ICONST_1
+    IF_ICMPNE L7
+    ILOAD 6
+    IFEQ L6
+   L7
+   FRAME FULL [akr ahb I I I I I I I] []
+    ILOAD 8
+    ICONST_2
+    IF_ICMPNE L8
+    ILOAD 6
+    ICONST_3
+    IF_ICMPEQ L6
+   L8
+   FRAME FULL [akr ahb I I I I I I I] []
+    ILOAD 8
+    ICONST_3
+    IF_ICMPNE L9
+    ILOAD 6
+    ICONST_2
+    IF_ICMPEQ L6
+   L9
+    LINENUMBER 251 L9
+   FRAME FULL [akr ahb I I I I I I I] []
+    ILOAD 2
+    ISTORE 9
+   L10
+    LINENUMBER 252 L10
+    ILOAD 4
+    ISTORE 10
+   L11
+    LINENUMBER 254 L11
+    ILOAD 8
+    IFNE L12
+   L13
+    LINENUMBER 256 L13
+    ILOAD 2
+    ICONST_1
+    ISUB
+    ISTORE 9
+   L12
+    LINENUMBER 259 L12
+   FRAME FULL [akr ahb I I I I I I I I I] []
+    ILOAD 8
+    ICONST_1
+    IF_ICMPNE L14
+   L15
+    LINENUMBER 261 L15
+    IINC 9 1
+   L14
+    LINENUMBER 264 L14
+   FRAME FULL [akr ahb I I I I I I I I I] []
+    ILOAD 8
+    ICONST_2
+    IF_ICMPNE L16
+   L17
+    LINENUMBER 266 L17
+    ILOAD 4
+    ICONST_1
+    ISUB
+    ISTORE 10
+   L16
+    LINENUMBER 269 L16
+   FRAME FULL [akr ahb I I I I I I I I I] []
+    ILOAD 8
+    ICONST_3
+    IF_ICMPNE L18
+   L19
+    LINENUMBER 271 L19
+    IINC 10 1
+   L18
+    LINENUMBER 274 L18
+   FRAME FULL [akr ahb I I I I I I I I I] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 9
+    ILOAD 3
+    ILOAD 10
+    INVOKESPECIAL akr.p (Lahb;III)Z
+    IFNE L6
+    ALOAD 1
+    ILOAD 9
+    ILOAD 3
+    ILOAD 10
+    INVOKEVIRTUAL ahb.a (III)Laji;
+    INVOKEVIRTUAL aji.o ()Lawt;
+    ALOAD 0
+    GETFIELD akr.J : Lawt;
+    IF_ACMPNE L20
+    ALOAD 1
+    ILOAD 9
+    ILOAD 3
+    ILOAD 10
+    INVOKEVIRTUAL ahb.e (III)I
+    IFEQ L6
+   L20
+    LINENUMBER 276 L20
+   FRAME FULL [akr ahb I I I I I I I I I] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 9
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 10
+    INVOKESPECIAL akr.p (Lahb;III)Z
+    IFNE L21
+   L22
+    LINENUMBER 278 L22
+    ILOAD 5
+    IRETURN
+   L21
+    LINENUMBER 281 L21
+   FRAME FULL [akr ahb I I I I I I I I I] []
+    ILOAD 5
+    ICONST_4
+    IF_ICMPGE L6
+   L23
+    LINENUMBER 283 L23
+    ALOAD 0
+    ALOAD 1
+    ILOAD 9
+    ILOAD 3
+    ILOAD 10
+    ILOAD 5
+    ICONST_1
+    IADD
+    ILOAD 8
+    INVOKESPECIAL akr.c (Lahb;IIIII)I
+    ISTORE 11
+   L24
+    LINENUMBER 285 L24
+    ILOAD 11
+    ILOAD 7
+    IF_ICMPGE L6
+   L25
+    LINENUMBER 287 L25
+    ILOAD 11
+    ISTORE 7
+   L6
+    LINENUMBER 247 L6
+   FRAME FULL [akr ahb I I I I I I I] []
+    IINC 8 1
+    GOTO L2
+   L3
+    LINENUMBER 294 L3
+   FRAME FULL [akr ahb I I I I I I I] []
+    ILOAD 7
+    IRETURN
+   L26
+    LOCALVARIABLE j2 I L24 L6 11
+    LOCALVARIABLE l1 I L10 L6 9
+    LOCALVARIABLE i2 I L11 L6 10
+    LOCALVARIABLE k1 I L2 L3 8
+    LOCALVARIABLE this Lakr; L0 L26 0
+    LOCALVARIABLE p_149812_1_ Lahb; L0 L26 1
+    LOCALVARIABLE p_149812_2_ I L0 L26 2
+    LOCALVARIABLE p_149812_3_ I L0 L26 3
+    LOCALVARIABLE p_149812_4_ I L0 L26 4
+    LOCALVARIABLE p_149812_5_ I L0 L26 5
+    LOCALVARIABLE p_149812_6_ I L0 L26 6
+    LOCALVARIABLE j1 I L1 L26 7
+    MAXSTACK = 7
+    MAXLOCALS = 12
+
+  // access flags 0x2
+  private o(Lahb;III)[Z
+   L0
+    LINENUMBER 302 L0
+    ICONST_0
+    ISTORE 5
+   L1
+   FRAME FULL [akr ahb I I I I] []
+    ILOAD 5
+    ICONST_4
+    IF_ICMPGE L2
+   L3
+    LINENUMBER 304 L3
+    ALOAD 0
+    GETFIELD akr.M : [I
+    ILOAD 5
+    SIPUSH 1000
+    IASTORE
+   L4
+    LINENUMBER 305 L4
+    ILOAD 2
+    ISTORE 6
+   L5
+    LINENUMBER 306 L5
+    ILOAD 4
+    ISTORE 7
+   L6
+    LINENUMBER 308 L6
+    ILOAD 5
+    IFNE L7
+   L8
+    LINENUMBER 310 L8
+    ILOAD 2
+    ICONST_1
+    ISUB
+    ISTORE 6
+   L7
+    LINENUMBER 313 L7
+   FRAME FULL [akr ahb I I I I I I] []
+    ILOAD 5
+    ICONST_1
+    IF_ICMPNE L9
+   L10
+    LINENUMBER 315 L10
+    IINC 6 1
+   L9
+    LINENUMBER 318 L9
+   FRAME FULL [akr ahb I I I I I I] []
+    ILOAD 5
+    ICONST_2
+    IF_ICMPNE L11
+   L12
+    LINENUMBER 320 L12
+    ILOAD 4
+    ICONST_1
+    ISUB
+    ISTORE 7
+   L11
+    LINENUMBER 323 L11
+   FRAME FULL [akr ahb I I I I I I] []
+    ILOAD 5
+    ICONST_3
+    IF_ICMPNE L13
+   L14
+    LINENUMBER 325 L14
+    IINC 7 1
+   L13
+    LINENUMBER 328 L13
+   FRAME FULL [akr ahb I I I I I I] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 6
+    ILOAD 3
+    ILOAD 7
+    INVOKESPECIAL akr.p (Lahb;III)Z
+    IFNE L15
+    ALOAD 1
+    ILOAD 6
+    ILOAD 3
+    ILOAD 7
+    INVOKEVIRTUAL ahb.a (III)Laji;
+    INVOKEVIRTUAL aji.o ()Lawt;
+    ALOAD 0
+    GETFIELD akr.J : Lawt;
+    IF_ACMPNE L16
+    ALOAD 1
+    ILOAD 6
+    ILOAD 3
+    ILOAD 7
+    INVOKEVIRTUAL ahb.e (III)I
+    IFEQ L15
+   L16
+    LINENUMBER 330 L16
+   FRAME FULL [akr ahb I I I I I I] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 6
+    ILOAD 3
+    ICONST_1
+    ISUB
+    ILOAD 7
+    INVOKESPECIAL akr.p (Lahb;III)Z
+    IFEQ L17
+   L18
+    LINENUMBER 332 L18
+    ALOAD 0
+    GETFIELD akr.M : [I
+    ILOAD 5
+    ALOAD 0
+    ALOAD 1
+    ILOAD 6
+    ILOAD 3
+    ILOAD 7
+    ICONST_1
+    ILOAD 5
+    INVOKESPECIAL akr.c (Lahb;IIIII)I
+    IASTORE
+    GOTO L15
+   L17
+    LINENUMBER 336 L17
+   FRAME FULL [akr ahb I I I I I I] []
+    ALOAD 0
+    GETFIELD akr.M : [I
+    ILOAD 5
+    ICONST_0
+    IASTORE
+   L15
+    LINENUMBER 302 L15
+   FRAME FULL [akr ahb I I I I I I] []
+    IINC 5 1
+    GOTO L1
+   L2
+    LINENUMBER 341 L2
+   FRAME FULL [akr ahb I I I I] []
+    ALOAD 0
+    GETFIELD akr.M : [I
+    ICONST_0
+    IALOAD
+    ISTORE 5
+   L19
+    LINENUMBER 343 L19
+    ICONST_1
+    ISTORE 6
+   L20
+   FRAME FULL [akr ahb I I I I I] []
+    ILOAD 6
+    ICONST_4
+    IF_ICMPGE L21
+   L22
+    LINENUMBER 345 L22
+    ALOAD 0
+    GETFIELD akr.M : [I
+    ILOAD 6
+    IALOAD
+    ILOAD 5
+    IF_ICMPGE L23
+   L24
+    LINENUMBER 347 L24
+    ALOAD 0
+    GETFIELD akr.M : [I
+    ILOAD 6
+    IALOAD
+    ISTORE 5
+   L23
+    LINENUMBER 343 L23
+   FRAME FULL [akr ahb I I I I I] []
+    IINC 6 1
+    GOTO L20
+   L21
+    LINENUMBER 351 L21
+   FRAME FULL [akr ahb I I I I I] []
+    ICONST_0
+    ISTORE 6
+   L25
+   FRAME FULL [akr ahb I I I I I] []
+    ILOAD 6
+    ICONST_4
+    IF_ICMPGE L26
+   L27
+    LINENUMBER 353 L27
+    ALOAD 0
+    GETFIELD akr.b : [Z
+    ILOAD 6
+    ALOAD 0
+    GETFIELD akr.M : [I
+    ILOAD 6
+    IALOAD
+    ILOAD 5
+    IF_ICMPNE L28
+    ICONST_1
+    GOTO L29
+   L28
+   FRAME FULL [akr ahb I I I I I] [[Z I]
+    ICONST_0
+   L29
+   FRAME FULL [akr ahb I I I I I] [[Z I I]
+    BASTORE
+   L30
+    LINENUMBER 351 L30
+    IINC 6 1
+    GOTO L25
+   L26
+    LINENUMBER 356 L26
+   FRAME FULL [akr ahb I I I I I] []
+    ALOAD 0
+    GETFIELD akr.b : [Z
+    ARETURN
+   L31
+    LOCALVARIABLE j1 I L6 L15 7
+    LOCALVARIABLE i1 I L5 L2 6
+    LOCALVARIABLE this Lakr; L0 L31 0
+    LOCALVARIABLE p_149808_1_ Lahb; L0 L31 1
+    LOCALVARIABLE p_149808_2_ I L0 L31 2
+    LOCALVARIABLE p_149808_3_ I L0 L31 3
+    LOCALVARIABLE p_149808_4_ I L0 L31 4
+    LOCALVARIABLE l I L1 L31 5
+    LOCALVARIABLE i1 I L20 L31 6
+    MAXSTACK = 9
+    MAXLOCALS = 8
+
+  // access flags 0x2
+  private p(Lahb;III)Z
+   L0
+    LINENUMBER 361 L0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL ahb.a (III)Laji;
+    ASTORE 5
+   L1
+    LINENUMBER 362 L1
+    ALOAD 5
+    GETSTATIC ajn.ao : Laji;
+    IF_ACMPEQ L2
+    ALOAD 5
+    GETSTATIC ajn.av : Laji;
+    IF_ACMPEQ L2
+    ALOAD 5
+    GETSTATIC ajn.an : Laji;
+    IF_ACMPEQ L2
+    ALOAD 5
+    GETSTATIC ajn.ap : Laji;
+    IF_ACMPEQ L2
+    ALOAD 5
+    GETSTATIC ajn.aH : Laji;
+    IF_ACMPEQ L2
+    ALOAD 5
+    GETFIELD aji.J : Lawt;
+    GETSTATIC awt.E : Lawt;
+    IF_ACMPNE L3
+    ICONST_1
+    GOTO L4
+   L3
+   FRAME FULL [akr ahb I I I aji] []
+    ALOAD 5
+    GETFIELD aji.J : Lawt;
+    INVOKEVIRTUAL awt.c ()Z
+    GOTO L4
+   L2
+   FRAME FULL [akr ahb I I I aji] []
+    ICONST_1
+   L4
+   FRAME FULL [akr ahb I I I aji] [I]
+    IRETURN
+   L5
+    LOCALVARIABLE this Lakr; L0 L5 0
+    LOCALVARIABLE p_149807_1_ Lahb; L0 L5 1
+    LOCALVARIABLE p_149807_2_ I L0 L5 2
+    LOCALVARIABLE p_149807_3_ I L0 L5 3
+    LOCALVARIABLE p_149807_4_ I L0 L5 4
+    LOCALVARIABLE block Laji; L1 L5 5
+    MAXSTACK = 4
+    MAXLOCALS = 6
+
+  // access flags 0x4
+  protected a(Lahb;IIII)I
+   L0
+    LINENUMBER 367 L0
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL akr.e (Lahb;III)I
+    ISTORE 6
+   L1
+    LINENUMBER 369 L1
+    ILOAD 6
+    IFGE L2
+   L3
+    LINENUMBER 371 L3
+    ILOAD 5
+    IRETURN
+   L2
+    LINENUMBER 375 L2
+   FRAME FULL [akr ahb I I I I I] []
+    ILOAD 6
+    IFNE L4
+   L5
+    LINENUMBER 377 L5
+    ALOAD 0
+    DUP
+    GETFIELD akr.a : I
+    ICONST_1
+    IADD
+    PUTFIELD akr.a : I
+   L4
+    LINENUMBER 380 L4
+   FRAME FULL [akr ahb I I I I I] []
+    ILOAD 6
+    BIPUSH 8
+    IF_ICMPLT L6
+   L7
+    LINENUMBER 382 L7
+    ICONST_0
+    ISTORE 6
+   L6
+    LINENUMBER 385 L6
+   FRAME FULL [akr ahb I I I I I] []
+    ILOAD 5
+    IFLT L8
+    ILOAD 6
+    ILOAD 5
+    IF_ICMPLT L8
+    ILOAD 5
+    GOTO L9
+   L8
+   FRAME FULL [akr ahb I I I I I] []
+    ILOAD 6
+   L9
+   FRAME FULL [akr ahb I I I I I] [I]
+    IRETURN
+   L10
+    LOCALVARIABLE this Lakr; L0 L10 0
+    LOCALVARIABLE p_149810_1_ Lahb; L0 L10 1
+    LOCALVARIABLE p_149810_2_ I L0 L10 2
+    LOCALVARIABLE p_149810_3_ I L0 L10 3
+    LOCALVARIABLE p_149810_4_ I L0 L10 4
+    LOCALVARIABLE p_149810_5_ I L0 L10 5
+    LOCALVARIABLE i1 I L1 L10 6
+    MAXSTACK = 5
+    MAXLOCALS = 7
+
+  // access flags 0x2
+  private q(Lahb;III)Z
+   L0
+    LINENUMBER 391 L0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL ahb.a (III)Laji;
+    INVOKEVIRTUAL aji.o ()Lawt;
+    ASTORE 5
+   L1
+    LINENUMBER 392 L1
+    ALOAD 5
+    ALOAD 0
+    GETFIELD akr.J : Lawt;
+    IF_ACMPNE L2
+    ICONST_0
+    GOTO L3
+   L2
+   FRAME FULL [akr ahb I I I awt] []
+    ALOAD 5
+    GETSTATIC awt.i : Lawt;
+    IF_ACMPNE L4
+    ICONST_0
+    GOTO L3
+   L4
+   FRAME FULL [akr ahb I I I awt] []
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKESPECIAL akr.p (Lahb;III)Z
+    IFNE L5
+    ICONST_1
+    GOTO L3
+   L5
+   FRAME FULL [akr ahb I I I awt] []
+    ICONST_0
+   L3
+   FRAME FULL [akr ahb I I I awt] [I]
+    IRETURN
+   L6
+    LOCALVARIABLE this Lakr; L0 L6 0
+    LOCALVARIABLE p_149809_1_ Lahb; L0 L6 1
+    LOCALVARIABLE p_149809_2_ I L0 L6 2
+    LOCALVARIABLE p_149809_3_ I L0 L6 3
+    LOCALVARIABLE p_149809_4_ I L0 L6 4
+    LOCALVARIABLE material Lawt; L1 L6 5
+    MAXSTACK = 5
+    MAXLOCALS = 6
+
+  // access flags 0x1
+  public b(Lahb;III)V
+   L0
+    LINENUMBER 397 L0
+    ALOAD 0
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKESPECIAL alw.b (Lahb;III)V
+   L1
+    LINENUMBER 399 L1
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    INVOKEVIRTUAL ahb.a (III)Laji;
+    ALOAD 0
+    IF_ACMPNE L2
+   L3
+    LINENUMBER 401 L3
+    ALOAD 1
+    ILOAD 2
+    ILOAD 3
+    ILOAD 4
+    ALOAD 0
+    ALOAD 0
+    ALOAD 1
+    INVOKEVIRTUAL akr.a (Lahb;)I
+    INVOKEVIRTUAL ahb.a (IIILaji;I)V
+   L2
+    LINENUMBER 403 L2
+   FRAME FULL [akr ahb I I I] []
+    RETURN
+   L4
+    LOCALVARIABLE this Lakr; L0 L4 0
+    LOCALVARIABLE p_149726_1_ Lahb; L0 L4 1
+    LOCALVARIABLE p_149726_2_ I L0 L4 2
+    LOCALVARIABLE p_149726_3_ I L0 L4 3
+    LOCALVARIABLE p_149726_4_ I L0 L4 4
+    MAXSTACK = 7
+    MAXLOCALS = 5
+
+  // access flags 0x1
+  public L()Z
+   L0
+    LINENUMBER 407 L0
+    ICONST_1
+    IRETURN
+   L1
+    LOCALVARIABLE this Lakr; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+}

@@ -1,0 +1,13 @@
+#Custom Ore Generation 1.2.24 Config Options
+#Wed Feb 21 19:40:52 NOVT 2024
+drawWireframes=true
+oreSize=1.0
+ifTetrahedrite=true
+advOptions=false
+COGActive=true
+oreFreq=1.0
+deferredPopulationRange=16.0
+ifCassiterite=true
+debugMode=false
+vanillaOreGen=false
+debugDist=false

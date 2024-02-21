@@ -1,0 +1,45 @@
+<SliceAndSpliceRecipes>
+	<recipeGroup name="EnderIO">
+		<recipe name="Electrode Skull" energyCost="20000">
+			<input>
+				<itemStack slot="0" oreDictionary="plateEnergeticAlloy" />
+				<itemStack slot="1" modID="minecraft" itemName="skull" itemMeta="2" />
+				<itemStack slot="2" oreDictionary="plateEnergeticAlloy" />
+				<itemStack slot="3" modID="gregtech" itemName="gt.metaitem.01" itemMeta="2020" />
+				<itemStack slot="4" modID="EnderIO" itemName="itemBasicCapacitor" itemMeta="0" />        
+				<itemStack slot="5" modID="gregtech" itemName="gt.metaitem.01" itemMeta="2020" />
+			</input>
+			<output>
+				<itemStack modID="EnderIO" itemName="itemFrankenSkull" itemMeta="0"/> 
+			</output>
+		</recipe>
+
+		<recipe name="Controller Skull" energyCost="20000">
+			<input>
+				<itemStack slot="0" oreDictionary="plateSoularium" />
+				<itemStack slot="1" modID="minecraft" itemName="skull" itemMeta="2" />
+				<itemStack slot="2" oreDictionary="plateSoularium" />
+				<itemStack slot="3" oreDictionary="plateSilicon" />
+				<itemStack slot="4" modID="minecraft" itemName="redstone" />
+				<itemStack slot="5" oreDictionary="plateSilicon" />
+			</input>
+			<output>
+				<itemStack modID="EnderIO" itemName="itemFrankenSkull" itemMeta="1"/> 
+			</output>
+		</recipe>
+
+		<recipe name="Ender Resonator" energyCost="20000">
+			<input>
+				<itemStack slot="0" oreDictionary="plateSoularium" />
+				<itemStack slot="1" modID="EnderIO" itemName="blockEndermanSkull" itemMeta="0" />
+				<itemStack slot="2" oreDictionary="plateSoularium" />
+				<itemStack slot="3" oreDictionary="plateSilicon" />
+				<itemStack slot="4" oreDictionary="plateVibrantAlloy" />
+				<itemStack slot="5" oreDictionary="plateSilicon" />
+			</input>
+			<output>
+				<itemStack modID="EnderIO" itemName="itemFrankenSkull" itemMeta="3"/> 
+			</output>
+		</recipe>
+	</recipeGroup>
+</SliceAndSpliceRecipes>
